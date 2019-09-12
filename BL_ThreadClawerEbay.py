@@ -20,7 +20,6 @@ import traceback
 import warnings
 warnings.filterwarnings('ignore')
 
-
 class ThreadClawerWish(Thread):
 
     def __init__(self, i, product_link_queue, product_info_queue, user_id):
@@ -34,6 +33,7 @@ class ThreadClawerWish(Thread):
         self.user_id = user_id
         self.mysql = MysqlDb()
         self.threadName = '采集线程' + str(i)
+
         self.product_link_queue = product_link_queue
         self.product_info_queue = product_info_queue
 
