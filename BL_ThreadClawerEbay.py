@@ -33,7 +33,6 @@ class ThreadClawerWish(Thread):
         self.user_id = user_id
         self.mysql = MysqlDb()
         self.threadName = '采集线程' + str(i)
-
         self.product_link_queue = product_link_queue
         self.product_info_queue = product_info_queue
 
